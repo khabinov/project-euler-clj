@@ -2,6 +2,5 @@
   (:use clojure.test
         project-euler-clj.core))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest problem1-test
+  (is (= 233168 (problem1))))

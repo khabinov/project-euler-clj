@@ -1,6 +1,7 @@
 (ns project-euler-clj.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn problem1 []
+  (->> (range 1000)
+       (filter #(or (= 0 (rem % 3))
+                    (= 0 (rem % 5))))
+       (reduce +)))
